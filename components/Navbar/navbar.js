@@ -1,4 +1,5 @@
 import "./Navbar.css";
+
 export const changeTheme = () => {
 const themeBtn = document.querySelector("#themeBtn");
 themeBtn.addEventListener("click", () => {
@@ -6,6 +7,7 @@ document.body.classList.toggle("light");
 changeText();
 });
 };
+
 export const changeText = () => {
 const themeBtn = document.querySelector("#themeBtn");
 if (themeBtn.innerText === "☀") {
@@ -14,6 +16,7 @@ if (themeBtn.innerText === "☀") {
 themeBtn.innerText = "☀";
 }
 };
+
 export const Navbar = () => `
 <nav>
 <h2>Peter Parker</h2>
